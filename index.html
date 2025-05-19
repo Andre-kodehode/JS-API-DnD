@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DnD API</title>
+    <link
+      rel="shortcut icon"
+      href="./images/5e D&D Logo.svg"
+      type="image/x-icon" />
+  </head>
+  <body>
+    <section class="menu">
+        <label for="race">Choose a race:</label>
+        <select id="race" name="races">
+          <option  value="" hidden selected>--Please choose an option--</option>
+        </select>
+        <label for="class">Choose a class:</label>
+        <select id="class" name="classes">
+          <option value="" hidden selected>--Please choose an option--</option>
+        </select>
+        <label for="subclass">Choose a subclass:</label>
+        <select id="subclass" name="subclasses">
+          <option value="" hidden selected>--Please choose an option--</option>
+        </select>
+    </section>
+    <section class="DnD">
+        <article class="card-container">
+          <div class="corner top-left"></div>
+          <div class="corner top-right"></div>
+          <div class="corner bottom-left"></div>
+          <div class="corner bottom-right"></div>
+    
+          <div class="profile">
+            <h2>Name: <span id="nameDisplay"></span></h2>
+            <h2>Race: <span id="raceDisplay">-</span></h2>
+            <h2>Class: <span id="classDisplay">-</span></h2>
+            <h2>Subclass: <span id="subclassDisplay">-</span></h2>
+            
+          </div>
+        </article>
+  </body>
+  <script type="module" src="./app.js"></script>
+</html>
