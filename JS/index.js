@@ -1,3 +1,4 @@
+// Export all functions from individual modules
 export { fetchAbility } from "./fetchAbility.js";
 export { renderPage } from "./renderPage.js";
 export { populateSelect, populateSelectDefault } from "./populateSelect.js";
